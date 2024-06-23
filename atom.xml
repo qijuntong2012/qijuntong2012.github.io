@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-06-22T12:01:03.142Z</updated>
+  <updated>2024-06-23T06:24:57.935Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2024/06/19/text-latex/"/>
     <id>http://example.com/2024/06/19/text-latex/</id>
     <published>2024-06-19T05:01:48.000Z</published>
-    <updated>2024-06-22T12:01:03.142Z</updated>
+    <updated>2024-06-23T06:24:57.935Z</updated>
     
-    <content type="html"><![CDATA[<p><span class="math inline">\(E=mc^2\)</span></p><span id="more"></span><p><span class="math display">\[F(X)=1 \\\\K(x)=\sqrt{x}\]</span> <imgsrc="https://pic.imgdb.cn/item/65d165f49f345e8d038c8b08.jpg"alt="image" /></p>]]></content>
+    <content type="html"><![CDATA[<p><span class="math inline">\(E=mc^2\)</span></p><span id="more"></span><p><span class="math display">\[F(X)=1 \\\\K(x)=\sqrt{x}\]</span> <imgsrc="https://pic.imgdb.cn/item/65d165f49f345e8d038c8b08.jpg"alt="image" /> <span class="math display">\[\begin{align}E(S^2)  &amp;=E\left(\frac{1}{n} \sum_{i=1}^n(X_i-\bar{X})^2\right)    \\&amp;   =E\left(\frac{1}{n}\sum_{i=1}^n X_i^2\right) -E\left(\frac{1}{n}\sum_{i=1}^n 2\bar{X}X_i\right) +E\left(\frac{1}{n}\sum_{i=1}^n \bar{X}^2\right)  \\&amp;   =EX^2 -E(\bar{X}^2) \\&amp;   =DX + (EX)^2 - D\bar{X} - (E\bar{X})^2  \\&amp;   =\frac{n-1}{n}DX    \end{align}\]</span></p>]]></content>
     
     
     <summary type="html">&lt;p&gt;&lt;span class=&quot;math inline&quot;&gt;&#92;(E=mc^2&#92;)&lt;/span&gt;&lt;/p&gt;</summary>

@@ -30,7 +30,18 @@ F(X)=1 \\\\
 K(x)=\sqrt{x}
 \]</span> <img
 src="https://pic.imgdb.cn/item/65d165f49f345e8d038c8b08.jpg"
-alt="image" /></p>
+alt="image" /> <span class="math display">\[
+\begin{align}
+E(S^2)  &amp;=E\left(\frac{1}{n} \sum_{i=1}^n
+(X_i-\bar{X})^2\right)    \\
+&amp;   =E\left(\frac{1}{n}\sum_{i=1}^n X_i^2\right) -
+E\left(\frac{1}{n}\sum_{i=1}^n 2\bar{X}X_i\right) +
+E\left(\frac{1}{n}\sum_{i=1}^n \bar{X}^2\right)  \\
+&amp;   =EX^2 -E(\bar{X}^2) \\
+&amp;   =DX + (EX)^2 - D\bar{X} - (E\bar{X})^2  \\
+&amp;   =\frac{n-1}{n}DX    
+\end{align}
+\]</span></p>
 ]]></content>
       <categories>
         <category>main</category>
