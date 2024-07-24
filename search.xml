@@ -175,10 +175,9 @@ class="math inline">\(a_1,a_2,a_3,\cdots ,a_n\)</span>，将 <span
 class="math inline">\(n\)</span>
 个整数去重，并且排序，输出操作后数组的大小，再输出这个数组。</p>
 <h3 id="数据范围">数据范围</h3>
-<p><span class="math display">\[
-1\leq n \leq 100\\\\
-1\leq a_1,a_2,a_3,\cdots ,a_n\leq1000
-\]</span></p>
+<p><span class="math inline">\(1\leq n \leq 100\)</span></p>
+<p><span class="math inline">\(1\leq a_1,a_2,a_3,\cdots
+,a_n\leq1000\)</span></p>
 <h2 id="解题思路">解题思路</h2>
 <p>这个数据范围，emm……，2006年的NOIP真是水。</p>
 <h3 id="解法1">解法1</h3>
