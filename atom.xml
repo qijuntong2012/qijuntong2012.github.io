@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-08-29T12:57:38.764Z</updated>
+  <updated>2024-08-29T12:58:52.346Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,19 +21,12 @@
     <link href="http://example.com/2024/08/29/20%E8%BF%9E%E6%B5%8B1%E8%B5%9B%E5%90%8E%E6%80%BB%E7%BB%93/"/>
     <id>http://example.com/2024/08/29/20%E8%BF%9E%E6%B5%8B1%E8%B5%9B%E5%90%8E%E6%80%BB%E7%BB%93/</id>
     <published>2024-08-29T12:56:56.000Z</published>
-    <updated>2024-08-29T12:57:38.764Z</updated>
+    <updated>2024-08-29T12:58:52.346Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="连测1-赛后总结">20连测1 赛后总结</h1><h2 id="赛时">赛时</h2><h3 id="t1">T1</h3><p>赛时没想出正解，打了一个 <spanclass="math inline">\(O\left(n^2\right)\)</span> 的暴力。得了 <spanclass="math inline">\(50\space \texttt{pts}\)</span>。其实赛后想想还挺简单的，公式就是： <span class="math display">\[\sum_{i=1}^n\left(n-1\right){a_i}^2-\sum_{i=1}^{n}\left(-2a_i\cdot\sum_{j=i+1}^{n}a_j\right)\]</span></p><h3 id="t2">T2</h3><p>差一点就想出正解来了，把 <span class="math inline">\(\mod 2\)</span>写成了 <span class="math inline">\(\mod 3\)</span> ，结果爆零了。</p><h3 id="t3">T3</h3><p>这个题是全场最简单的一道题，画一画图就满分了。</p><h3 id="t4">T4</h3><p>赛时写了个 <code>DFS</code> ，赛时样例过了，但是交上去爆零了。</p><h3 id="预估分数">预估分数</h3><p><spanclass="math inline">\(50+30+100+50=230\space\left(\texttt{pts}\right)\)</span></p><h3 id="实际分数">实际分数</h3><p><spanclass="math inline">\(50+0+100+0=150\space\left(\texttt{pts}\right)\)</span></p><hr /><h2 id="不足之处">不足之处</h2><ul><li><p>T1推公式推的并不仔细，就算错了也没有认真查错，否则拿个 <spanclass="math inline">\(50\space\texttt{pts}\)</span>还是没有什么问题的。</p></li><li><p>T2并没有认真思考，就是一个进制转换问题，其实赛后看了题解觉得比T1还简单。</p></li><li><p>T4真是吃了大亏，连这种基本算法都能写错，说明对算法的熟练度不高，平时还是要多刷题才行。</p></li></ul><hr /><h2 id="solution">solution</h2><h3 id="t1-1">T1</h3><p>上面都有公式，没什么好说的。</p><h3 id="t2-1">T2</h3><p>假设 <span class="math inline">\(m\)</span>代表这个数在二进制下非零的位数，如果 <span class="math inline">\(m\leqk\)</span> 且奇偶性相同的话，可以，否则不行。</p><h3 id="t3-1">T3</h3><p>没什么好说的。</p><h3 id="t4-1">T4</h3><p>一道 <code>BFS</code> 分层最短路，在加上一些 <code>DP</code>，就可以算出最小的字典序。</p><hr />]]></content>
+    <content type="html"><![CDATA[<h1 id="连测1-赛后总结">20连测1 赛后总结</h1><span id="more"></span><h2 id="赛时">赛时</h2><h3 id="t1">T1</h3><p>赛时没想出正解，打了一个 <spanclass="math inline">\(O\left(n^2\right)\)</span> 的暴力。得了 <spanclass="math inline">\(50\space \texttt{pts}\)</span>。其实赛后想想还挺简单的，公式就是： <span class="math display">\[\sum_{i=1}^n\left(n-1\right){a_i}^2-\sum_{i=1}^{n}\left(-2a_i\cdot\sum_{j=i+1}^{n}a_j\right)\]</span></p><h3 id="t2">T2</h3><p>差一点就想出正解来了，把 <span class="math inline">\(\mod 2\)</span>写成了 <span class="math inline">\(\mod 3\)</span> ，结果爆零了。</p><h3 id="t3">T3</h3><p>这个题是全场最简单的一道题，画一画图就满分了。</p><h3 id="t4">T4</h3><p>赛时写了个 <code>DFS</code> ，赛时样例过了，但是交上去爆零了。</p><h3 id="预估分数">预估分数</h3><p><spanclass="math inline">\(50+30+100+50=230\space\left(\texttt{pts}\right)\)</span></p><h3 id="实际分数">实际分数</h3><p><spanclass="math inline">\(50+0+100+0=150\space\left(\texttt{pts}\right)\)</span></p><hr /><h2 id="不足之处">不足之处</h2><ul><li><p>T1推公式推的并不仔细，就算错了也没有认真查错，否则拿个 <spanclass="math inline">\(50\space\texttt{pts}\)</span>还是没有什么问题的。</p></li><li><p>T2并没有认真思考，就是一个进制转换问题，其实赛后看了题解觉得比T1还简单。</p></li><li><p>T4真是吃了大亏，连这种基本算法都能写错，说明对算法的熟练度不高，平时还是要多刷题才行。</p></li></ul><hr /><h2 id="solution">solution</h2><h3 id="t1-1">T1</h3><p>上面都有公式，没什么好说的。</p><h3 id="t2-1">T2</h3><p>假设 <span class="math inline">\(m\)</span>代表这个数在二进制下非零的位数，如果 <span class="math inline">\(m\leqk\)</span> 且奇偶性相同的话，可以，否则不行。</p><h3 id="t3-1">T3</h3><p>没什么好说的。</p><h3 id="t4-1">T4</h3><p>一道 <code>BFS</code> 分层最短路，在加上一些 <code>DP</code>，就可以算出最小的字典序。</p><hr />]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h1 id=&quot;连测1-赛后总结&quot;&gt;20连测1 赛后总结&lt;/h1&gt;
-&lt;h2 id=&quot;赛时&quot;&gt;赛时&lt;/h2&gt;
-&lt;h3 id=&quot;t1&quot;&gt;T1&lt;/h3&gt;
-&lt;p&gt;赛时没想出正解，打了一个 &lt;span
-class=&quot;math inline&quot;&gt;&#92;(O&#92;left(n^2&#92;right)&#92;</summary>
-      
+    <summary type="html">&lt;h1 id=&quot;连测1-赛后总结&quot;&gt;20连测1 赛后总结&lt;/h1&gt;</summary>
     
     
     
