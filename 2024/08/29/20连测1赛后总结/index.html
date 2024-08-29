@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="二维前缀和 简介 二维前缀和是前缀和差分中的一类，属于基础算法。通常用于求子矩阵元素的和。">
+  <meta name="description" content="20连测1 赛后总结 赛时 T1 赛时没想出正解，打了一个 \(O\left(n^2\right)\) 的暴力。得了 \(50\space \texttt{pts}\) 。其实赛后想想还挺简单的，公式就是： \[ \sum_{i&#x3D;1}^n\left(n-1\right){a_i}^2-\sum_{i&#x3D;1}^{n}\left(-2a_i\cdot\sum_{j&#x3D;i+1}^{n}a_j\ri">
 <meta property="og:type" content="article">
-<meta property="og:title" content="二维前缀和">
-<meta property="og:url" content="http://example.com/2024/06/30/%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C/index.html">
+<meta property="og:title" content="20连测1赛后总结">
+<meta property="og:url" content="http://example.com/2024/08/29/20%E8%BF%9E%E6%B5%8B1%E8%B5%9B%E5%90%8E%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="qijuntong2012&#39;s blog">
-<meta property="og:description" content="二维前缀和 简介 二维前缀和是前缀和差分中的一类，属于基础算法。通常用于求子矩阵元素的和。">
+<meta property="og:description" content="20连测1 赛后总结 赛时 T1 赛时没想出正解，打了一个 \(O\left(n^2\right)\) 的暴力。得了 \(50\space \texttt{pts}\) 。其实赛后想想还挺简单的，公式就是： \[ \sum_{i&#x3D;1}^n\left(n-1\right){a_i}^2-\sum_{i&#x3D;1}^{n}\left(-2a_i\cdot\sum_{j&#x3D;i+1}^{n}a_j\ri">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-06-30T08:23:02.000Z">
-<meta property="article:modified_time" content="2024-08-13T01:34:47.936Z">
+<meta property="article:published_time" content="2024-08-29T12:56:56.000Z">
+<meta property="article:modified_time" content="2024-08-29T12:57:38.764Z">
 <meta property="article:author" content="__int1024">
 <meta property="article:tag" content="main">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2024/06/30/%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C/">
+<link rel="canonical" href="http://example.com/2024/08/29/20%E8%BF%9E%E6%B5%8B1%E8%B5%9B%E5%90%8E%E6%80%BB%E7%BB%93/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>二维前缀和 | qijuntong2012's blog</title>
+  <title>20连测1赛后总结 | qijuntong2012's blog</title>
   
 
 
@@ -194,7 +194,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/06/30/%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/29/20%E8%BF%9E%E6%B5%8B1%E8%B5%9B%E5%90%8E%E6%80%BB%E7%BB%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avartar.png">
@@ -207,7 +207,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          二维前缀和
+          20连测1赛后总结
         </h1>
 
         <div class="post-meta">
@@ -216,16 +216,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2024-06-30 16:23:02" itemprop="dateCreated datePublished" datetime="2024-06-30T16:23:02+08:00">2024-06-30</time>
+              <time title="创建时间：2024-08-29 20:56:56 / 修改时间：20:57:38" itemprop="dateCreated datePublished" datetime="2024-08-29T20:56:56+08:00">2024-08-29</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-08-13 09:34:47" itemprop="dateModified" datetime="2024-08-13T09:34:47+08:00">2024-08-13</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -247,76 +241,51 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="二维前缀和">二维前缀和</h1>
-<h2 id="简介">简介</h2>
-<p>二维前缀和是<a
-target="_blank" rel="noopener" href="https://oi-wiki.org/basic/prefix-sum/">前缀和差分</a>中的一类，属于基础算法。通常用于求子矩阵元素的和。</p>
-<span id="more"></span>
-<p>假设有一个 <span class="math inline">\(n\times m\)</span>
-的矩阵，二维前缀和预处理复杂度为 <span
-class="math inline">\(O\left(nm\right)\)</span> ，查询复杂度为 <span
-class="math inline">\(O\left(1\right)\)</span> ，如果查询 <span
-class="math inline">\(q\)</span> 次，那么暴力查询的复杂度为 <span
-class="math inline">\(O\left(nmq\right)\)</span>
-，而用二维前缀和则只需要 <span
-class="math inline">\(O\left(q\right)\)</span> ，可见是不小的优化。</p>
-<h2 id="实现过程">实现过程</h2>
-<h3 id="预处理">预处理</h3>
-<p>实现这个算法需要先预处理一个二维数组 <span
-class="math inline">\(S\)</span>，存放这个矩阵从 <span
-class="math inline">\(0,0\)</span> 到 <span
-class="math inline">\(i,j\)</span> 的子矩阵元素的和 <span
-class="math inline">\(\left(1\leq i\leq n,1\leq j \leq m\right)\)</span>
-。</p>
-<p>这样子不好理解，我举一个例子：</p>
-<p>在 <span class="math inline">\(3\times 3\)</span> 的矩阵中，<span
-class="math inline">\(S_{2,2}\)</span> 就指的是下图红色块的和：</p>
-<p><a target="_blank" rel="noopener" href="https://pic.imgdb.cn/item/66811cc8d9c307b7e9ead926.png"><img
-src="https://pic.imgdb.cn/item/66811cc8d9c307b7e9ead926.png" /></a></p>
-<p>那么，如何预处理矩阵呢？</p>
-<p>参照上图矩阵，求 <span class="math inline">\(S_{2,2}\)</span>
-，就需要用 <span class="math inline">\(2\)</span> 和 <span
-class="math inline">\(4\)</span> <span class="math inline">\(\left(
-S_{2,1}\right)\)</span> 加上 <span class="math inline">\(2\)</span> 和
-<span class="math inline">\(3\)</span> <span
-class="math inline">\(\left(S_{1,2}\right)\)</span> ，这样 <span
-class="math inline">\(2\)</span> <span
-class="math inline">\(\left(S_{1,1}\right)\)</span>
-被加了两次，需要减去。这样就可以根据已知推出整个 <span
-class="math inline">\(S\)</span> 矩阵了。</p>
-<p><strong>递推式：</strong> <span class="math display">\[
-S_{i,j}=S_{i-1,j}+ S_{i,j-1}-S_{i-1,j-1}+a_{i,j}
+        <h1 id="连测1-赛后总结">20连测1 赛后总结</h1>
+<h2 id="赛时">赛时</h2>
+<h3 id="t1">T1</h3>
+<p>赛时没想出正解，打了一个 <span
+class="math inline">\(O\left(n^2\right)\)</span> 的暴力。得了 <span
+class="math inline">\(50\space \texttt{pts}\)</span>
+。其实赛后想想还挺简单的，公式就是： <span class="math display">\[
+\sum_{i=1}^n\left(n-1\right){a_i}^2-\sum_{i=1}^{n}\left(-2a_i\cdot\sum_{j=i+1}^{n}a_j\right)
 \]</span></p>
-<h3 id="计算">计算</h3>
-<p>给出的样例可不一定是左下角是 <span class="math inline">\(1,1\)</span>
-的矩阵。 比如求下图绿色部分的和，就要用 <span
-class="math inline">\(S_{3,3}\)</span> 减去粉色部分的和。</p>
-<p><a target="_blank" rel="noopener" href="https://pic.imgdb.cn/item/668121e2d9c307b7e9f1d522.png"><img
-src="https://pic.imgdb.cn/item/668121e2d9c307b7e9f1d522.png" /></a></p>
-<p>现在的问题就是粉色部分怎么求。</p>
-<p>把粉色部分分成两部分，一个是 <span
-class="math inline">\(S_{3,1}\)</span> ，另一个是 <span
-class="math inline">\(S_{1,3}\)</span> 。把它们加起来，就多了一个 <span
-class="math inline">\(S_{1,1}\)</span> 在把它减去就可以了。</p>
-<p>假设子矩阵左上角是 <span
-class="math inline">\(\left(x1,y1\right)\)</span> ，右上角是 <span
-class="math inline">\(\left(x2,y2\right)\)</span> ，那么矩阵的和为：
-<span class="math display">\[
-S_{x2,y2}-S_{\left(x1-1\right),y2}-S_{x2,\left(y1-1\right)}+S_{\left(x1-1\right),\left(y1-1\right)}
-\]</span></p>
-<h2 id="例题及讲解">例题及讲解</h2>
-<h3 id="直链">直链</h3>
-<p><a
-target="_blank" rel="noopener" href="https://oj.daima101.com/problem/D2061">【入门】子矩阵求和</a></p>
-<h3 id="思路">思路</h3>
-<p>模板题，就是求矩阵元素和，直接套公式，计算出来即可。</p>
-<blockquote>
-<p>千万不要用暴力，复杂度会达到 <span
-class="math inline">\(O\left(2\times 10^{11}\right)\)</span>
-,小心TLE</p>
-</blockquote>
-<h3 id="code">Code</h3>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> debug cerr&lt;&lt;<span class="string">&quot;The code runs successfully.\n&quot;</span>;</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> endl <span class="string">&#x27;\n&#x27;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TRACE 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tcout TRACE &amp;&amp; cout</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fst ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> P = <span class="number">998244353</span>; </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> Base = <span class="number">3221225477</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">0x3f3f3f3f3f3f3f3f</span>; </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e3</span> + <span class="number">10</span>, M = <span class="number">2e6</span> + <span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> a[N][N],s[N][N];<span class="comment">//全局全部赋值为0，访问S[0][0]不会爆掉</span></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	fst;</span><br><span class="line">	<span class="type">int</span> n,m,q;</span><br><span class="line">	cin&gt;&gt;n&gt;&gt;m&gt;&gt;q;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=m;j++)</span><br><span class="line">		&#123;</span><br><span class="line">			cin&gt;&gt;a[i][j];</span><br><span class="line">            <span class="comment">//预处理S数组</span></span><br><span class="line">			s[i][j]=s[i][j<span class="number">-1</span>]+s[i<span class="number">-1</span>][j]-s[i<span class="number">-1</span>][j<span class="number">-1</span>]+a[i][j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;q;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> x1,y1,x2,y2;</span><br><span class="line">		cin&gt;&gt;x1&gt;&gt;y1&gt;&gt;x2&gt;&gt;y2;</span><br><span class="line">        <span class="comment">//套用公式</span></span><br><span class="line">		<span class="type">int</span> ans=(s[x2][y2]-s[x1<span class="number">-1</span>][y2]-s[x2][y1<span class="number">-1</span>]+s[x1<span class="number">-1</span>][y1<span class="number">-1</span>]);</span><br><span class="line">		cout&lt;&lt;ans&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="t2">T2</h3>
+<p>差一点就想出正解来了，把 <span class="math inline">\(\mod 2\)</span>
+写成了 <span class="math inline">\(\mod 3\)</span> ，结果爆零了。</p>
+<h3 id="t3">T3</h3>
+<p>这个题是全场最简单的一道题，画一画图就满分了。</p>
+<h3 id="t4">T4</h3>
+<p>赛时写了个 <code>DFS</code> ，赛时样例过了，但是交上去爆零了。</p>
+<h3 id="预估分数">预估分数</h3>
+<p><span
+class="math inline">\(50+30+100+50=230\space\left(\texttt{pts}\right)\)</span></p>
+<h3 id="实际分数">实际分数</h3>
+<p><span
+class="math inline">\(50+0+100+0=150\space\left(\texttt{pts}\right)\)</span></p>
+<hr />
+<h2 id="不足之处">不足之处</h2>
+<ul>
+<li><p>T1推公式推的并不仔细，就算错了也没有认真查错，否则拿个 <span
+class="math inline">\(50\space\texttt{pts}\)</span>
+还是没有什么问题的。</p></li>
+<li><p>T2并没有认真思考，就是一个进制转换问题，其实赛后看了题解觉得比T1还简单。</p></li>
+<li><p>T4真是吃了大亏，连这种基本算法都能写错，说明对算法的熟练度不高，平时还是要多刷题才行。</p></li>
+</ul>
+<hr />
+<h2 id="solution">solution</h2>
+<h3 id="t1-1">T1</h3>
+<p>上面都有公式，没什么好说的。</p>
+<h3 id="t2-1">T2</h3>
+<p>假设 <span class="math inline">\(m\)</span>
+代表这个数在二进制下非零的位数，如果 <span class="math inline">\(m\leq
+k\)</span> 且奇偶性相同的话，可以，否则不行。</p>
+<h3 id="t3-1">T3</h3>
+<p>没什么好说的。</p>
+<h3 id="t4-1">T4</h3>
+<p>一道 <code>BFS</code> 分层最短路，在加上一些 <code>DP</code>
+，就可以算出最小的字典序。</p>
+<hr />
 
     </div>
 
@@ -335,13 +304,10 @@ class="math inline">\(O\left(2\times 10^{11}\right)\)</span>
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2024/06/19/text-latex/" rel="prev" title="text-latex">
-      <i class="fa fa-chevron-left"></i> text-latex
+    <a href="/2024/07/24/%E6%B4%9B%E8%B0%B7P1059%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A/" rel="prev" title="洛谷P1059解题报告">
+      <i class="fa fa-chevron-left"></i> 洛谷P1059解题报告
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2024/07/11/%E3%80%902024%E6%9A%91%E5%81%87%E3%80%91-%E6%99%AE%E5%8F%8A5/" rel="next" title="【2024暑假】-普及5">
-      【2024暑假】-普及5 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -400,7 +366,7 @@ class="math inline">\(O\left(2\times 10^{11}\right)\)</span>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C"><span class="nav-text">二维前缀和</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E8%BF%87%E7%A8%8B"><span class="nav-text">实现过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%84%E5%A4%84%E7%90%86"><span class="nav-text">预处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97"><span class="nav-text">计算</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98%E5%8F%8A%E8%AE%B2%E8%A7%A3"><span class="nav-text">例题及讲解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B4%E9%93%BE"><span class="nav-text">直链</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#code"><span class="nav-text">Code</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9E%E6%B5%8B1-%E8%B5%9B%E5%90%8E%E6%80%BB%E7%BB%93"><span class="nav-text">20连测1 赛后总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B5%9B%E6%97%B6"><span class="nav-text">赛时</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#t1"><span class="nav-text">T1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#t2"><span class="nav-text">T2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#t3"><span class="nav-text">T3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#t4"><span class="nav-text">T4</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%84%E4%BC%B0%E5%88%86%E6%95%B0"><span class="nav-text">预估分数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E9%99%85%E5%88%86%E6%95%B0"><span class="nav-text">实际分数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E8%B6%B3%E4%B9%8B%E5%A4%84"><span class="nav-text">不足之处</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#solution"><span class="nav-text">solution</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#t1-1"><span class="nav-text">T1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#t2-1"><span class="nav-text">T2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#t3-1"><span class="nav-text">T3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#t4-1"><span class="nav-text">T4</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
