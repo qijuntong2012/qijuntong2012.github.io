@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-08-29T12:58:52.346Z</updated>
+  <updated>2024-09-17T02:38:37.136Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2024/08/29/20%E8%BF%9E%E6%B5%8B1%E8%B5%9B%E5%90%8E%E6%80%BB%E7%BB%93/"/>
     <id>http://example.com/2024/08/29/20%E8%BF%9E%E6%B5%8B1%E8%B5%9B%E5%90%8E%E6%80%BB%E7%BB%93/</id>
     <published>2024-08-29T12:56:56.000Z</published>
-    <updated>2024-08-29T12:58:52.346Z</updated>
+    <updated>2024-09-17T02:38:37.136Z</updated>
     
     <content type="html"><![CDATA[<h1 id="连测1-赛后总结">20连测1 赛后总结</h1><span id="more"></span><h2 id="赛时">赛时</h2><h3 id="t1">T1</h3><p>赛时没想出正解，打了一个 <spanclass="math inline">\(O\left(n^2\right)\)</span> 的暴力。得了 <spanclass="math inline">\(50\space \texttt{pts}\)</span>。其实赛后想想还挺简单的，公式就是： <span class="math display">\[\sum_{i=1}^n\left(n-1\right){a_i}^2-\sum_{i=1}^{n}\left(-2a_i\cdot\sum_{j=i+1}^{n}a_j\right)\]</span></p><h3 id="t2">T2</h3><p>差一点就想出正解来了，把 <span class="math inline">\(\mod 2\)</span>写成了 <span class="math inline">\(\mod 3\)</span> ，结果爆零了。</p><h3 id="t3">T3</h3><p>这个题是全场最简单的一道题，画一画图就满分了。</p><h3 id="t4">T4</h3><p>赛时写了个 <code>DFS</code> ，赛时样例过了，但是交上去爆零了。</p><h3 id="预估分数">预估分数</h3><p><spanclass="math inline">\(50+30+100+50=230\space\left(\texttt{pts}\right)\)</span></p><h3 id="实际分数">实际分数</h3><p><spanclass="math inline">\(50+0+100+0=150\space\left(\texttt{pts}\right)\)</span></p><hr /><h2 id="不足之处">不足之处</h2><ul><li><p>T1推公式推的并不仔细，就算错了也没有认真查错，否则拿个 <spanclass="math inline">\(50\space\texttt{pts}\)</span>还是没有什么问题的。</p></li><li><p>T2并没有认真思考，就是一个进制转换问题，其实赛后看了题解觉得比T1还简单。</p></li><li><p>T4真是吃了大亏，连这种基本算法都能写错，说明对算法的熟练度不高，平时还是要多刷题才行。</p></li></ul><hr /><h2 id="solution">solution</h2><h3 id="t1-1">T1</h3><p>上面都有公式，没什么好说的。</p><h3 id="t2-1">T2</h3><p>假设 <span class="math inline">\(m\)</span>代表这个数在二进制下非零的位数，如果 <span class="math inline">\(m\leqk\)</span> 且奇偶性相同的话，可以，否则不行。</p><h3 id="t3-1">T3</h3><p>没什么好说的。</p><h3 id="t4-1">T4</h3><p>一道 <code>BFS</code> 分层最短路，在加上一些 <code>DP</code>，就可以算出最小的字典序。</p><hr />]]></content>
     
@@ -30,10 +30,10 @@
     
     
     
-    <category term="main" scheme="http://example.com/categories/main/"/>
+    <category term="个人记录" scheme="http://example.com/categories/%E4%B8%AA%E4%BA%BA%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="main" scheme="http://example.com/tags/main/"/>
+    <category term="2024" scheme="http://example.com/tags/2024/"/>
     
   </entry>
   
@@ -42,7 +42,7 @@
     <link href="http://example.com/2024/07/24/%E6%B4%9B%E8%B0%B7P1059%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A/"/>
     <id>http://example.com/2024/07/24/%E6%B4%9B%E8%B0%B7P1059%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A/</id>
     <published>2024-07-24T09:01:53.000Z</published>
-    <updated>2024-07-24T09:34:31.008Z</updated>
+    <updated>2024-09-17T03:08:04.987Z</updated>
     
     <content type="html"><![CDATA[<h1 id="洛谷p1059解题报告">洛谷P1059解题报告</h1><span id="more"></span><p><a href="https://www.luogu.com.cn/problem/P1059">link</a></p><h2 id="题目大意">题目大意</h2><p>给定 <span class="math inline">\(n\)</span> 个整数 <spanclass="math inline">\(a_1,a_2,a_3,\cdots ,a_n\)</span>，将 <spanclass="math inline">\(n\)</span>个整数去重，并且排序，输出操作后数组的大小，再输出这个数组。</p><h3 id="数据范围">数据范围</h3><p><span class="math inline">\(1\leq n \leq 100\)</span></p><p><span class="math inline">\(1\leq a_1,a_2,a_3,\cdots,a_n\leq1000\)</span></p><h2 id="解题思路">解题思路</h2><p>这个数据范围，emm……，2006年的NOIP真是水。</p><h3 id="解法1">解法1</h3><p>使用STL大法中的 <code>set</code>，它本身就具有排序和去重的功能，可以无伤A掉这道题。</p><h4 id="code">Code:</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> debug cerr&lt;&lt;<span class="string">&quot;The code runs successfully.\n&quot;</span>;</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> endl <span class="string">&#x27;\n&#x27;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TRACE 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tcout TRACE &amp;&amp; cout</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fst ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> P = <span class="number">998244353</span>; </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> Base = <span class="number">3221225477</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">0x3f3f3f3f3f3f3f3f</span>; </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e6</span> + <span class="number">10</span>, M = <span class="number">2e6</span> + <span class="number">10</span>;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">fst;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line">cin&gt;&gt;n;</span><br><span class="line">set&lt;<span class="type">int</span>&gt; s;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="type">int</span> t;</span><br><span class="line">cin&gt;&gt;t;</span><br><span class="line">s.<span class="built_in">insert</span>(t);</span><br><span class="line">&#125;</span><br><span class="line">cout&lt;&lt;s.<span class="built_in">size</span>()&lt;&lt;endl;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> e:s)</span><br><span class="line">&#123;</span><br><span class="line">cout&lt;&lt;e&lt;&lt;<span class="string">&#x27; &#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="解法2">解法2</h3><p>由于数据范围，可以暴力，用 <code>map&lt;int,bool&gt;</code>，<code>unordered_map&lt;int,bool&gt;</code> 或者<code>bitset&lt;1010&gt;</code>来解决，存储每个数是否在数组里，遍历并统计个数，最后遍历输出。</p><h4 id="code-1">Code:</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> debug cerr&lt;&lt;<span class="string">&quot;The code runs successfully.\n&quot;</span>;</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> endl <span class="string">&#x27;\n&#x27;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TRACE 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tcout TRACE &amp;&amp; cout</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fst ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> P = <span class="number">998244353</span>; </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> Base = <span class="number">3221225477</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">0x3f3f3f3f3f3f3f3f</span>; </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e3</span> + <span class="number">10</span>, M = <span class="number">2e6</span> + <span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> n,tmp;</span><br><span class="line">bitset&lt;N&gt; vis;<span class="comment">//内存上的优势</span></span><br><span class="line"><span class="comment">//map&lt;int,bool&gt; vis;</span></span><br><span class="line"><span class="comment">//unordered_map&lt;int,bool&gt; vis;</span></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">fst;</span><br><span class="line">cin&gt;&gt;n;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">cin&gt;&gt;tmp;</span><br><span class="line">vis[tmp]=<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">1000</span>;i++)</span><br><span class="line">&#123;</span><br><span class="line">ans+=vis[i];</span><br><span class="line">&#125;</span><br><span class="line">cout&lt;&lt;ans&lt;&lt;endl;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">1000</span>;i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">if</span>(vis[i])</span><br><span class="line">&#123;</span><br><span class="line">cout&lt;&lt;i&lt;&lt;<span class="string">&#x27; &#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="done.">done.</h3>]]></content>
     
@@ -51,10 +51,10 @@
     
     
     
-    <category term="main" scheme="http://example.com/categories/main/"/>
+    <category term="题解" scheme="http://example.com/categories/%E9%A2%98%E8%A7%A3/"/>
     
     
-    <category term="main" scheme="http://example.com/tags/main/"/>
+    <category term="2024" scheme="http://example.com/tags/2024/"/>
     
   </entry>
   
@@ -63,7 +63,7 @@
     <link href="http://example.com/2024/07/11/%E3%80%902024%E6%9A%91%E5%81%87%E3%80%91-%E6%99%AE%E5%8F%8A5/"/>
     <id>http://example.com/2024/07/11/%E3%80%902024%E6%9A%91%E5%81%87%E3%80%91-%E6%99%AE%E5%8F%8A5/</id>
     <published>2024-07-11T02:07:29.000Z</published>
-    <updated>2024-07-11T02:23:12.996Z</updated>
+    <updated>2024-09-17T02:38:27.866Z</updated>
     
     <content type="html"><![CDATA[<p>今天wfyz四个机房都被占用了，在家打线上赛。</p><span id="more"></span><h4 id="a">A</h4><p>水题，用 <span class="math inline">\(\Theta\left(n\right)\)</span>算法 <span class="math inline">\(33\)</span> ms拿下AC。</p><h4 id="b">B</h4><p>贪心思想，特别简单，AC。</p><h4 id="c">C</h4><p>DP被我做成了贪心，只拿30pts。</p><h4 id="d">D</h4><p>不就是美国血统字符串换成数组吗？AC。</p><h4 id="e">E</h4><p>被一个私人捆绑爆零了。</p><h4 id="f">F</h4><p>用 <code>vector</code> 暴力，62pts。</p><h4 id="g">G</h4><p>不会qwq。</p><h4 id="总分">总分</h4><p>342pts，rank 9。</p>]]></content>
     
@@ -72,10 +72,10 @@
     
     
     
-    <category term="main" scheme="http://example.com/categories/main/"/>
+    <category term="个人记录" scheme="http://example.com/categories/%E4%B8%AA%E4%BA%BA%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="main" scheme="http://example.com/tags/main/"/>
+    <category term="2024" scheme="http://example.com/tags/2024/"/>
     
   </entry>
   
@@ -84,7 +84,7 @@
     <link href="http://example.com/2024/06/30/%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     <id>http://example.com/2024/06/30/%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C/</id>
     <published>2024-06-30T08:23:02.000Z</published>
-    <updated>2024-08-13T01:34:47.936Z</updated>
+    <updated>2024-09-17T03:07:58.684Z</updated>
     
     <content type="html"><![CDATA[<h1 id="二维前缀和">二维前缀和</h1><h2 id="简介">简介</h2><p>二维前缀和是<ahref="https://oi-wiki.org/basic/prefix-sum/">前缀和差分</a>中的一类，属于基础算法。通常用于求子矩阵元素的和。</p><span id="more"></span><p>假设有一个 <span class="math inline">\(n\times m\)</span>的矩阵，二维前缀和预处理复杂度为 <spanclass="math inline">\(O\left(nm\right)\)</span> ，查询复杂度为 <spanclass="math inline">\(O\left(1\right)\)</span> ，如果查询 <spanclass="math inline">\(q\)</span> 次，那么暴力查询的复杂度为 <spanclass="math inline">\(O\left(nmq\right)\)</span>，而用二维前缀和则只需要 <spanclass="math inline">\(O\left(q\right)\)</span> ，可见是不小的优化。</p><h2 id="实现过程">实现过程</h2><h3 id="预处理">预处理</h3><p>实现这个算法需要先预处理一个二维数组 <spanclass="math inline">\(S\)</span>，存放这个矩阵从 <spanclass="math inline">\(0,0\)</span> 到 <spanclass="math inline">\(i,j\)</span> 的子矩阵元素的和 <spanclass="math inline">\(\left(1\leq i\leq n,1\leq j \leq m\right)\)</span>。</p><p>这样子不好理解，我举一个例子：</p><p>在 <span class="math inline">\(3\times 3\)</span> 的矩阵中，<spanclass="math inline">\(S_{2,2}\)</span> 就指的是下图红色块的和：</p><p><a href="https://pic.imgdb.cn/item/66811cc8d9c307b7e9ead926.png"><imgsrc="https://pic.imgdb.cn/item/66811cc8d9c307b7e9ead926.png" /></a></p><p>那么，如何预处理矩阵呢？</p><p>参照上图矩阵，求 <span class="math inline">\(S_{2,2}\)</span>，就需要用 <span class="math inline">\(2\)</span> 和 <spanclass="math inline">\(4\)</span> <span class="math inline">\(\left(S_{2,1}\right)\)</span> 加上 <span class="math inline">\(2\)</span> 和<span class="math inline">\(3\)</span> <spanclass="math inline">\(\left(S_{1,2}\right)\)</span> ，这样 <spanclass="math inline">\(2\)</span> <spanclass="math inline">\(\left(S_{1,1}\right)\)</span>被加了两次，需要减去。这样就可以根据已知推出整个 <spanclass="math inline">\(S\)</span> 矩阵了。</p><p><strong>递推式：</strong> <span class="math display">\[S_{i,j}=S_{i-1,j}+ S_{i,j-1}-S_{i-1,j-1}+a_{i,j}\]</span></p><h3 id="计算">计算</h3><p>给出的样例可不一定是左下角是 <span class="math inline">\(1,1\)</span>的矩阵。 比如求下图绿色部分的和，就要用 <spanclass="math inline">\(S_{3,3}\)</span> 减去粉色部分的和。</p><p><a href="https://pic.imgdb.cn/item/668121e2d9c307b7e9f1d522.png"><imgsrc="https://pic.imgdb.cn/item/668121e2d9c307b7e9f1d522.png" /></a></p><p>现在的问题就是粉色部分怎么求。</p><p>把粉色部分分成两部分，一个是 <spanclass="math inline">\(S_{3,1}\)</span> ，另一个是 <spanclass="math inline">\(S_{1,3}\)</span> 。把它们加起来，就多了一个 <spanclass="math inline">\(S_{1,1}\)</span> 在把它减去就可以了。</p><p>假设子矩阵左上角是 <spanclass="math inline">\(\left(x1,y1\right)\)</span> ，右上角是 <spanclass="math inline">\(\left(x2,y2\right)\)</span> ，那么矩阵的和为：<span class="math display">\[S_{x2,y2}-S_{\left(x1-1\right),y2}-S_{x2,\left(y1-1\right)}+S_{\left(x1-1\right),\left(y1-1\right)}\]</span></p><h2 id="例题及讲解">例题及讲解</h2><h3 id="直链">直链</h3><p><ahref="https://oj.daima101.com/problem/D2061">【入门】子矩阵求和</a></p><h3 id="思路">思路</h3><p>模板题，就是求矩阵元素和，直接套公式，计算出来即可。</p><blockquote><p>千万不要用暴力，复杂度会达到 <spanclass="math inline">\(O\left(2\times 10^{11}\right)\)</span>,小心TLE</p></blockquote><h3 id="code">Code</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> debug cerr&lt;&lt;<span class="string">&quot;The code runs successfully.\n&quot;</span>;</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> endl <span class="string">&#x27;\n&#x27;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TRACE 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tcout TRACE &amp;&amp; cout</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fst ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> P = <span class="number">998244353</span>; </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> Base = <span class="number">3221225477</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">0x3f3f3f3f3f3f3f3f</span>; </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e3</span> + <span class="number">10</span>, M = <span class="number">2e6</span> + <span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> a[N][N],s[N][N];<span class="comment">//全局全部赋值为0，访问S[0][0]不会爆掉</span></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">fst;</span><br><span class="line"><span class="type">int</span> n,m,q;</span><br><span class="line">cin&gt;&gt;n&gt;&gt;m&gt;&gt;q;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=m;j++)</span><br><span class="line">&#123;</span><br><span class="line">cin&gt;&gt;a[i][j];</span><br><span class="line">            <span class="comment">//预处理S数组</span></span><br><span class="line">s[i][j]=s[i][j<span class="number">-1</span>]+s[i<span class="number">-1</span>][j]-s[i<span class="number">-1</span>][j<span class="number">-1</span>]+a[i][j];</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;q;i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="type">int</span> x1,y1,x2,y2;</span><br><span class="line">cin&gt;&gt;x1&gt;&gt;y1&gt;&gt;x2&gt;&gt;y2;</span><br><span class="line">        <span class="comment">//套用公式</span></span><br><span class="line"><span class="type">int</span> ans=(s[x2][y2]-s[x1<span class="number">-1</span>][y2]-s[x2][y1<span class="number">-1</span>]+s[x1<span class="number">-1</span>][y1<span class="number">-1</span>]);</span><br><span class="line">cout&lt;&lt;ans&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
     
@@ -96,10 +96,10 @@ href=&quot;https://oi-wiki.org/basic/prefix-sum/&quot;&gt;前缀和差分&lt;/a&
     
     
     
-    <category term="main" scheme="http://example.com/categories/main/"/>
+    <category term="算法·理论" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95%C2%B7%E7%90%86%E8%AE%BA/"/>
     
     
-    <category term="main" scheme="http://example.com/tags/main/"/>
+    <category term="2024" scheme="http://example.com/tags/2024/"/>
     
   </entry>
   
@@ -108,7 +108,7 @@ href=&quot;https://oi-wiki.org/basic/prefix-sum/&quot;&gt;前缀和差分&lt;/a&
     <link href="http://example.com/2024/06/19/text-latex/"/>
     <id>http://example.com/2024/06/19/text-latex/</id>
     <published>2024-06-19T05:01:48.000Z</published>
-    <updated>2024-07-11T02:13:39.993Z</updated>
+    <updated>2024-09-17T03:07:52.370Z</updated>
     
     <content type="html"><![CDATA[<p><span class="math inline">\(E=mc^2\)</span></p><span id="more"></span><p><span class="math display">\[\begin{split}F(X)=1 \\K(x)=\sqrt{x}\end{split}\]</span> <imgsrc="https://pic.imgdb.cn/item/65d165f49f345e8d038c8b08.jpg"alt="image" /> <span class="math display">\[\begin{align}E(S^2)  &amp;=E\left(\frac{1}{n} \sum_{i=1}^n(X_i-\bar{X})^2\right)    \\&amp;   =E\left(\frac{1}{n}\sum_{i=1}^n X_i^2\right) -E\left(\frac{1}{n}\sum_{i=1}^n 2\bar{X}X_i\right) +E\left(\frac{1}{n}\sum_{i=1}^n \bar{X}^2\right)  \\&amp;   =EX^2 -E(\bar{X}^2) \\&amp;   =DX + (EX)^2 - D\bar{X} - (E\bar{X})^2  \\&amp;   =\frac{n-1}{n}DX    \end{align}\]</span></p>]]></content>
     
@@ -117,10 +117,10 @@ href=&quot;https://oi-wiki.org/basic/prefix-sum/&quot;&gt;前缀和差分&lt;/a&
     
     
     
-    <category term="main" scheme="http://example.com/categories/main/"/>
+    <category term="其他" scheme="http://example.com/categories/%E5%85%B6%E4%BB%96/"/>
     
     
-    <category term="main" scheme="http://example.com/tags/main/"/>
+    <category term="2024" scheme="http://example.com/tags/2024/"/>
     
   </entry>
   
@@ -129,7 +129,7 @@ href=&quot;https://oi-wiki.org/basic/prefix-sum/&quot;&gt;前缀和差分&lt;/a&
     <link href="http://example.com/2024/06/15/chenge-first-blog/"/>
     <id>http://example.com/2024/06/15/chenge-first-blog/</id>
     <published>2024-06-15T13:37:24.000Z</published>
-    <updated>2024-07-11T02:13:58.859Z</updated>
+    <updated>2024-09-17T02:44:00.231Z</updated>
     
     <content type="html"><![CDATA[<p>stostostoorzorzorz</p><span id="more"></span><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -138,10 +138,10 @@ href=&quot;https://oi-wiki.org/basic/prefix-sum/&quot;&gt;前缀和差分&lt;/a&
     
     
     
-    <category term="main" scheme="http://example.com/categories/main/"/>
+    <category term="其他" scheme="http://example.com/categories/%E5%85%B6%E4%BB%96/"/>
     
     
-    <category term="main" scheme="http://example.com/tags/main/"/>
+    <category term="2024" scheme="http://example.com/tags/2024/"/>
     
   </entry>
   
