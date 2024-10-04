@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-10-04T11:22:46.948Z</updated>
+  <updated>2024-10-04T11:24:23.035Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,18 +21,13 @@
     <link href="http://example.com/2024/10/04/2024-10-4%E8%B5%9B%E5%90%8E%E6%80%BB%E7%BB%93/"/>
     <id>http://example.com/2024/10/04/2024-10-4%E8%B5%9B%E5%90%8E%E6%80%BB%E7%BB%93/</id>
     <published>2024-10-04T11:19:35.000Z</published>
-    <updated>2024-10-04T11:22:46.948Z</updated>
+    <updated>2024-10-04T11:24:23.035Z</updated>
     
-    <content type="html"><![CDATA[<span id="more"></span><h1 id="texttt2024.10.4-赛后总结"><spanclass="math inline">\(\texttt{2024.10.4 赛后总结}\)</span></h1><h2 id="比赛记录">比赛记录</h2><p>成绩： <spanclass="math inline">\(100+100+20+0=220\space\texttt{pts}\)</span></p><p>补题：<spanclass="math inline">\(100+100+100+0=300\texttt{pts}\)</span></p><p>难度：<spanclass="math inline">\(\textcolor{orange}{\texttt{橙}}\space\textcolor{orange}{\texttt{橙}}\space\textcolor{yellow}{\texttt{黄}}\space\textcolor{green}{\texttt{绿}}\)</span></p><hr /><h2 id="反思">反思</h2><ul><li><p>骗分一定不要输固定值！</p></li><li><p>骗分一定不要输固定值！</p></li><li><p>骗分一定不要输固定值！</p></li></ul><hr /><p>重要的事情说三遍。</p><h2 id="题目">题目</h2><h3 id="a">A</h3><h4 id="题面">题面</h4><p>在 <span class="math inline">\(l,r\)</span> 之间选一个数 <spanclass="math inline">\(x\)</span> ，求 <spanclass="math inline">\(x\)</span> 质因子个数的最大值。</p><h4 id="思路">思路</h4><p>可以证明，当 <span class="math inline">\(x=2^n\)</span> 答案最优，而<span class="math inline">\(2l\leq r\)</span> ，那么在区间中一定有 <spanclass="math inline">\(x=2^n\)</span> ，答案就是正整数 <spanclass="math inline">\(n\)</span> 。</p><h4 id="代码重点">代码重点</h4><p>输出记得下取整。</p><h3 id="b">B</h3><h4 id="题面-1">题面</h4><p>给定 <span class="math inline">\(l,r\)</span> ，求 <spanclass="math inline">\(l|(l+1)|(l+2)|\ldots|r\)</span> 。</p><p>多组数据。</p><h4 id="思路-1">思路</h4><p>按位拆分，如果区间里有一个数在这个位上的值为 <spanclass="math inline">\(1\)</span>，就加上这个位在十进制中代表的值，总复杂度 <spanclass="math inline">\(\Theta(T \log^2 r)\)</span> ，可以接受。</p><h4 id="代码要点">代码要点</h4><p>对于多组数据记得清空。</p><h3 id="c">C</h3><h4 id="题面-2">题面</h4><p>找出没有重复元素的，最长的，字典序最小的子序列，其中奇数位的字典序要乘<span class="math inline">\(-1\)</span> 。</p><h4 id="思路-2">思路</h4><p>用 <code>set</code>维护每个数最后出现的位置，每次取最前面的就是答案。</p><h4 id="代码要点-1">代码要点</h4><p>这样做可能超时，要用单调队列优化算法。</p><h3 id="d">D</h3><h4 id="题面-3">题面</h4><p>抽象的题面。</p><p><imgsrc="https://pic.imgdb.cn/item/66ff8de8d29ded1a8ca6d6e9.png" /></p><h4 id="思路-3">思路</h4><p>一道DP好题。</p><p>令 <span class="math inline">\(dp_{i,j}\)</span> 表示到了 <spanclass="math inline">\(i\)</span> 划分为 <spanclass="math inline">\(j\)</span> 段，第二层枚举到 <spanclass="math inline">\(k+1\)</span>，然后加上一些前缀和优惠，可以接受。</p><h4 id="代码要点-2">代码要点</h4><p>记得取模。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="texttt2024.10.4-赛后总结"><spanclass="math inline">\(\texttt{2024.10.4 赛后总结}\)</span></h1><span id="more"></span><h2 id="比赛记录">比赛记录</h2><p>成绩： <spanclass="math inline">\(100+100+20+0=220\space\texttt{pts}\)</span></p><p>补题：<spanclass="math inline">\(100+100+100+0=300\texttt{pts}\)</span></p><p>难度：<spanclass="math inline">\(\textcolor{orange}{\texttt{橙}}\space\textcolor{orange}{\texttt{橙}}\space\textcolor{yellow}{\texttt{黄}}\space\textcolor{green}{\texttt{绿}}\)</span></p><hr /><h2 id="反思">反思</h2><ul><li><p>骗分一定不要输固定值！</p></li><li><p>骗分一定不要输固定值！</p></li><li><p>骗分一定不要输固定值！</p></li></ul><hr /><p>重要的事情说三遍。</p><h2 id="题目">题目</h2><h3 id="a">A</h3><h4 id="题面">题面</h4><p>在 <span class="math inline">\(l,r\)</span> 之间选一个数 <spanclass="math inline">\(x\)</span> ，求 <spanclass="math inline">\(x\)</span> 质因子个数的最大值。</p><h4 id="思路">思路</h4><p>可以证明，当 <span class="math inline">\(x=2^n\)</span> 答案最优，而<span class="math inline">\(2l\leq r\)</span> ，那么在区间中一定有 <spanclass="math inline">\(x=2^n\)</span> ，答案就是正整数 <spanclass="math inline">\(n\)</span> 。</p><h4 id="代码重点">代码重点</h4><p>输出记得下取整。</p><h3 id="b">B</h3><h4 id="题面-1">题面</h4><p>给定 <span class="math inline">\(l,r\)</span> ，求 <spanclass="math inline">\(l|(l+1)|(l+2)|\ldots|r\)</span> 。</p><p>多组数据。</p><h4 id="思路-1">思路</h4><p>按位拆分，如果区间里有一个数在这个位上的值为 <spanclass="math inline">\(1\)</span>，就加上这个位在十进制中代表的值，总复杂度 <spanclass="math inline">\(\Theta(T \log^2 r)\)</span> ，可以接受。</p><h4 id="代码要点">代码要点</h4><p>对于多组数据记得清空。</p><h3 id="c">C</h3><h4 id="题面-2">题面</h4><p>找出没有重复元素的，最长的，字典序最小的子序列，其中奇数位的字典序要乘<span class="math inline">\(-1\)</span> 。</p><h4 id="思路-2">思路</h4><p>用 <code>set</code>维护每个数最后出现的位置，每次取最前面的就是答案。</p><h4 id="代码要点-1">代码要点</h4><p>这样做可能超时，要用单调队列优化算法。</p><h3 id="d">D</h3><h4 id="题面-3">题面</h4><p>抽象的题面。</p><p><imgsrc="https://pic.imgdb.cn/item/66ff8de8d29ded1a8ca6d6e9.png" /></p><h4 id="思路-3">思路</h4><p>一道DP好题。</p><p>令 <span class="math inline">\(dp_{i,j}\)</span> 表示到了 <spanclass="math inline">\(i\)</span> 划分为 <spanclass="math inline">\(j\)</span> 段，第二层枚举到 <spanclass="math inline">\(k+1\)</span>，然后加上一些前缀和优惠，可以接受。</p><h4 id="代码要点-2">代码要点</h4><p>记得取模。</p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;h1 id=&quot;texttt2024.10.4-赛后总结&quot;&gt;&lt;span
-class=&quot;math inline&quot;&gt;&#92;(&#92;texttt{2024.10.4 赛后总结}&#92;)&lt;/span&gt;&lt;/h1&gt;
-&lt;h2 id=&quot;比赛记录&quot;&gt;比赛记</summary>
-      
+    <summary type="html">&lt;h1 id=&quot;texttt2024.10.4-赛后总结&quot;&gt;&lt;span
+class=&quot;math inline&quot;&gt;&#92;(&#92;texttt{2024.10.4 赛后总结}&#92;)&lt;/span&gt;&lt;/h1&gt;</summary>
     
     
     
